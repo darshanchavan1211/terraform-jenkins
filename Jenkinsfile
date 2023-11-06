@@ -15,7 +15,7 @@ pipeline{
         stage("clone") {
             steps {
             echo "cloning the code"
-            git url:"https://github.com/darshanchavan1211/new-repo.git" , branch: "main"
+            git url:"https://github.com/darshanchavan1211/terraform-jenkins.git" , branch: "main"
             }
         }
         stage("paln") {
