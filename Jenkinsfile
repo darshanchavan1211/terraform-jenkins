@@ -33,8 +33,8 @@ pipeline{
                     if (params.action == 'apply') {
                 
 
-                       // sh 'terraform ${action} -input=false tfplan'
-                           sh 'terraform ${action} '
+                        sh 'terraform ${action} -input=false tfplan'
+                       //    sh 'terraform ${action} '
                     } else if (params.action == 'destroy') {
                         sh 'terraform ${action} --auto=approve '
                     } else {
